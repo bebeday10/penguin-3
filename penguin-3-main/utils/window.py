@@ -6,8 +6,7 @@ manager = pfw.PenguinFancyWindowManager()
 main_window = pfw.PenguinIceWindow(
     manager=manager,
     keyword_not_found_message="the penguin doesn't know what that means... :(",
-    before_exit=s.p.save_data,
-    window_title="Penguin 3"
+    before_exit=s.p.save_data
 )
 
 main_window.app_icon(p.IMAGE_DIR / "penguin_icon.png")

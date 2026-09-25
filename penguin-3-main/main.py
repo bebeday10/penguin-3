@@ -1,7 +1,5 @@
 import utils.window as w
 import utils.state as s
 import utils.garbage as g
-import utils.stats
-import utils.penguin_func
 w.manager.run()
 
