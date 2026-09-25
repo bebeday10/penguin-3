@@ -26,6 +26,9 @@ def sell_garbage():
         try:
             entered = int(entered)
         except ValueError:
+            if entered == "exit":
+                sell_window.destroy()
+                return
             sell_window.configure_widget("desc", text="that's not a full number!!!")
             return
 
@@ -46,8 +49,8 @@ def sell_garbage():
     sell_window.app_icon(p.IMAGE_DIR / "penguin_icon.png")
     sell_window.add_widget(ctk.CTkLabel, "main label", text=f"sell some garbage ({s.p.name} has {s.p.garbage}kg of it)", font=("Roboto", 30, "bold"), side="top", x_space=25, y_space=25)
     sell_window.add_frame("Entry Frame", side="top", x_space=25, y_space=25)
-    sell_window.add_widget(ctk.CTkLabel, "desc", text="type a number of kg to sell...", owner=sell_window.widgets["Entry Frame"], side="top", y_space=20, x_space=20)
-    sell_window.add_entry("Sell entry", placeholder_text="Type a number, like 3...", owner=sell_window.widgets["Entry Frame"], side="left", y_space=20, x_space=20, command=complete_sell)
+    sell_window.add_widget(ctk.CTkLabel, "desc", text="type a number of kg to sell or type exit to go back...", owner=sell_window.widgets["Entry Frame"], side="top", y_space=20, x_space=20)
+    sell_window.add_entry("Sell entry", placeholder_text="Type a number, like 3 or type exit to go back...", owner=sell_window.widgets["Entry Frame"], side="left", y_space=20, x_space=20, command=complete_sell)
     sell_window.configure_widget("Sell entry", width=300)
     sell_window.add_image("garbage_sell_image", p.IMAGE_DIR / "garbage_selling.png", owner=sell_window.widgets["Entry Frame"])
     
