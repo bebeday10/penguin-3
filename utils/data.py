@@ -3,8 +3,10 @@ import json as j
 from .paths import BASE_DIR
 
 def save_data(data, filename):
-    filepath = BASE_DIR / filename
-    with open(filepath, "w") as f: 
+    filepath = BASE_DIR.parent / "penguin-3-data"
+    filepath.mkdir(exist_ok=True)
+    save = filepath / filename
+    with open(save, "w") as f: 
         j.dump(
             data,
             f,

@@ -27,12 +27,12 @@ class Penguin:
         }
         d.save_data(
             data,
-            p.BASE_DIR / "save.json"
+            "save.json"
         )
 
     def load_data(self):
         data = d.load_data(
-            p.BASE_DIR / "save.json",
+            p.BASE_DIR.parent / "penguin-3-data" / "save.json",
             self.DEFAULT_DATA
         )
         for key, value in data.items():
