@@ -8,4 +8,5 @@ import utils.what_to_do
 import utils.dance
 import utils.name_change
 import utils.penguin_3_image
+import utils.store
 w.manager.run()
