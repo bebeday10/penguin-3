@@ -10,4 +10,5 @@ import utils.name_change
 import utils.penguin_3_image
 import utils.store
 import utils.eat
+import utils.say
 w.manager.run()
