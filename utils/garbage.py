@@ -1,6 +1,7 @@
 from . import state as s
 from . import window as w
 from . import paths as p
+from . import penguin_func as pf
 from random import randint, uniform
 import penglang.modules.pengfancywindow as pfw
 import customtkinter as ctk
@@ -42,7 +43,8 @@ def sell_garbage():
             s.p.cash += earnings_now
             sell_window.configure_widget("desc", text=f"{s.p.name} sold {entered} kg and earned ${earnings_now:.2f}!!")
             sell_window.configure_widget("main label", text=f"sell some garbage ({s.p.name} has {s.p.garbage}kg of it)")
-            w.main_window.add_text(f"the {s.p.name} celebrates! ooh ooh!!! 🐧🍌🎉🎉")
+            w.main_window.add_text(f"the {s.p.name} celebrates their earnings of ${earnings_now:.2f} after selling {entered} kg! ooh ooh!!! 🐧🍌🎉🎉")
+            pf.penguin(3)
             
 
     sell_window = pfw.PenguinFancyWindow(window_title="sell garbage")
