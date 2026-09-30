@@ -1,6 +1,11 @@
 # Changelog
 
 Welcome to changelog
+## 1.3.0
+*hot dog china edition* groceries added  
+watermelon **expensive** = *quality*  
+also you can eat them are you happy yet  
+**Make your penguins talk** using `say`!
 ## 1.2.0
 Names can change. The logos, dancing, greeting, asking what to do is here!  
 Check out these new features!  
