@@ -11,4 +11,5 @@ import utils.penguin_3_image
 import utils.store
 import utils.eat
 import utils.say
+import utils.ask
 w.manager.run()

@@ -5,7 +5,7 @@
 - [ ] add disco
 - [ ] go fishing
   - [ ] add why fish are expensive
-- [ ] add say
+- [x] add say
 - [ ] the clubhouse
 - [ ] wishing tree
 - [ ] penguin charity fund
