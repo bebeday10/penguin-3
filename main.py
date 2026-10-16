@@ -16,4 +16,6 @@ import utils.news
 import utils.coin_flip
 import utils.cash_search
 import utils.fish_market
+import utils.avalanche
+import utils.processing_plant
 w.manager.run()
