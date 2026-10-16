@@ -8,7 +8,7 @@ def dance(dance_style="penguin"):
     Subkeywords:
         dance_style: after 'dance', type out the dance style!! defaults to "penguin".
     """
-    w.main_window.add_text(f"penguin does a {dance_style} dance!!! ooh ooh! 🪩")
+    w.main_window.add_text(f"{s.p.name} does a {dance_style} dance!!! ooh ooh! 🪩")
 
 w.main_window.keywords[
     "dance",

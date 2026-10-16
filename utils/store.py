@@ -9,14 +9,16 @@ def grocery():
     """
     buy an item at the grocery for your penguin to eat!!
     """
+    w.main_window.add_text(f"{s.p.name} goes to the grocery!!!")
     def sale(item, price):
         if price > s.p.cash:
             grocery_window.configure_widget("desc", text="the penguin doesn't have that much money...")
+            w.main_window.add_text(f"{s.p.name} didn't have any more money to buy {item}... it was ${price - s.p.cash:.2f} too much...")
             return
 
         s.p.cash -= price
         s.p.inventory["edibles"][item] = s.p.inventory["edibles"].get(item, 0) + 1
-        w.main_window.add_text(f"the penguin is very happy that they got a {item}!! ooh ooh!!! 🎉🐧")
+        w.main_window.add_text(f"the penguin is very happy that they got a {item} (${price})!! ooh ooh!!! 🎉🐧")
         grocery_window.configure_widget("store label", text=f"the grocery with food ({s.p.name} currently has ${s.p.cash:.2f})")
         pf.penguin(3)
 

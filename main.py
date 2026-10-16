@@ -12,4 +12,8 @@ import utils.store
 import utils.eat
 import utils.say
 import utils.ask
+import utils.news
+import utils.coin_flip
+import utils.cash_search
+import utils.fish_market
 w.manager.run()
