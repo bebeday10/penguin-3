@@ -4,6 +4,8 @@ import random as r
 from . import cash_search as cs
 from . import news as n
 from . import garbage as g
+from . import store as st
+from . import fish_market as fm
 
 def random_event_loop():
 
@@ -52,6 +54,17 @@ def random_event_loop():
 
     if chance() <= 20:
         w.main_window.add_text("the penguin yearns for sashimi. maybe you should go to the fish market?")
+
+    if chance() <= 25:
+        w.main_window.add_text("the clouds are deforming. expect the sun to appear.")
+
+    if chance() <= 6:
+        w.main_window.add_text("the penguin is going to the groceries without consent. but they need your help to buy stuff. please?")
+        st.grocery()
+
+    if chance() <= 3:
+        w.main_window.add_text("the penguin is going to the fish market without consent. but they need your help to buy stuff (especially the sashimi). please?")
+        fm.fish_market()
 
 
     w.main_window.after(50, random_event_loop)
