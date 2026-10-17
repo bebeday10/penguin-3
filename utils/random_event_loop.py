@@ -11,7 +11,7 @@ from . import what_to_do as wtd
 
 def random_event_loop():
 
-    chance = lambda: r.uniform(0, 125000)
+    chance = lambda: r.uniform(0, 150000)
 
     if chance() <= 10:
         w.main_window.add_text(f"lucky {s.p.name}! they found 10 cents!")
