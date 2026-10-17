@@ -60,10 +60,15 @@ def sell_garbage():
 w.main_window.keywords[
     "collect-garbage",
     "start-garbage-collection",
-    "earn-garbage"
+    "earn-garbage",
+    "collect-trash",
+    "earn-trash",
+    "collectgarbage"
 ] = collect_garbage
 w.main_window.keywords[
     "sell-garbage",
     "start-selling-garbage",
-    "sellgarbage"
+    "sellgarbage",
+    "sell-trash",
+    "selltrash"
 ] = sell_garbage

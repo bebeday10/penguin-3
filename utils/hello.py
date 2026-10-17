@@ -8,5 +8,7 @@ def hello():
 w.main_window.keywords[
     "hello",
     "say-hello",
-    "greeting"
+    "greeting",
+    "hi",
+    "hi-there"
 ] = hello

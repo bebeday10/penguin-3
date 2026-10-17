@@ -18,4 +18,7 @@ import utils.cash_search
 import utils.fish_market
 import utils.avalanche
 import utils.processing_plant
+import utils.random_event_loop as rel
+
+rel.random_event_loop()
 w.manager.run()
