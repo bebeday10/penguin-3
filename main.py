@@ -19,6 +19,8 @@ import utils.fish_market
 import utils.avalanche
 import utils.processing_plant
 import utils.random_event_loop as rel
+import utils.countrywants
+import utils.fishing
 
 rel.random_event_loop()
 w.manager.run()

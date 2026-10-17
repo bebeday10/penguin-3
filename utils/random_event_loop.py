@@ -6,10 +6,12 @@ from . import news as n
 from . import garbage as g
 from . import store as st
 from . import fish_market as fm
+from . import fishing
+from . import what_to_do as wtd
 
 def random_event_loop():
 
-    chance = lambda: r.uniform(0, 100000)
+    chance = lambda: r.uniform(0, 125000)
 
     if chance() <= 10:
         w.main_window.add_text(f"lucky {s.p.name}! they found 10 cents!")
@@ -35,7 +37,7 @@ def random_event_loop():
         w.main_window.add_text("the penguin decides to search for cash as free time.")
         cs.cash_search()
 
-    if chance() <= 60 and s.p.garbage == 0:
+    if chance() <= 40 and s.p.garbage == 0:
         w.main_window.add_text(f"{s.p.name} seems to have zero (0) kg of garbage. consider collecting garbage?")
 
     if chance() <= 30:
@@ -65,6 +67,27 @@ def random_event_loop():
     if chance() <= 3:
         w.main_window.add_text("the penguin is going to the fish market without consent. but they need your help to buy stuff (especially the sashimi). please?")
         fm.fish_market()
+
+    if chance() <= 30:
+        w.main_window.add_text("the penguin would like to go fishing now. consider fishing?")
+
+    if chance() <= 4:
+        w.main_window.add_text("the penguin will go fishing without your consent. but you still need to fish.")
+        fishing.fishing()
+
+    if chance() <= 3:
+        w.main_window.add_text(f"{s.p.name} is going to ask itself what to do. don't blame it.")
+        wtd.what_do()
+
+    if chance() <= 0.6:
+        w.main_window.add_text(f"{s.p.name} is going to do a random thing. beware.")
+        random_thing = r.choice(w.main_window.keywords.values())
+        w.main_window.add_text(f"it is going to do {random_thing.__name__}.")
+        if random_thing.__name__ == "exit":
+            w.main_window.add_text("... but it couldn't because it was too dangerous. aww well.")
+            w.main_window.after(50, random_event_loop)
+            return
+        random_thing()
 
 
     w.main_window.after(50, random_event_loop)
