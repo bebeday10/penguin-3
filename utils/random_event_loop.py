@@ -8,6 +8,7 @@ from . import store as st
 from . import fish_market as fm
 from . import fishing
 from . import what_to_do as wtd
+from . import eat
 
 def random_event_loop():
 
@@ -88,6 +89,18 @@ def random_event_loop():
             w.main_window.after(50, random_event_loop)
             return
         random_thing()
+
+    if chance() <= 1.5:
+        w.main_window.add_text(f"{s.p.name} is going to eat a random food without anyone's consent.")
+        try:
+            random_food = r.choice(s.p.inventory["edibles"].keys())
+        except IndexError:
+            w.main_window.add_text("hm. there seems to be no food at all!")
+            return
+
+        w.main_window.add_text(f"and that food is {random_food}! say goodbye to it!")
+        eat.eat(random_food)
+
 
 
     w.main_window.after(50, random_event_loop)
