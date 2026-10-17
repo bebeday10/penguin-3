@@ -65,6 +65,7 @@ def fishing():
     for i in sides:
         fish_win.add_button(f"{i} button", command=lambda i=i: input(i), owner=fish_win.widgets["button frame"], text=f"{i}")
     fish_win.add_button("exit button", owner=fish_win.widgets["button frame"], command=fish_win.destroy, text="exit")
+    fish_win.add_image("fishing platform", p.IMAGE_DIR / "fishing_platform.png", owner=fish_win.widgets["button frame"], image_size=(192, 192))
 
 
 w.main_window.keywords[
