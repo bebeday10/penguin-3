@@ -22,6 +22,7 @@ import utils.random_event_loop as rel
 import utils.countrywants
 import utils.fishing
 import utils.cleaning
+import utils.dirty_a_thing
 
 rel.random_event_loop()
 w.manager.run()

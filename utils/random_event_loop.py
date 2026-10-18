@@ -39,7 +39,7 @@ def random_event_loop():
         w.main_window.add_text("the penguin decides to search for cash as free time.")
         cs.cash_search()
 
-    if chance() <= 40 and s.p.garbage == 0:
+    if chance() <= 30 and s.p.garbage == 0:
         w.main_window.add_text(f"{s.p.name} seems to have zero (0) kg of garbage. consider collecting garbage?")
 
     if chance() <= 30:
@@ -85,7 +85,7 @@ def random_event_loop():
         w.main_window.add_text(f"{s.p.name} is going to ask itself what to do. don't blame it.")
         wtd.what_do()
 
-    if chance() <= 2:
+    if chance() <= 3:
         w.main_window.add_text(f"{s.p.name} is going to do a random thing. beware.")
         random_thing = r.choice(list(w.main_window.keywords.values()))
         w.main_window.add_text(f"it is going to do {random_thing.__name__}.")
@@ -95,16 +95,33 @@ def random_event_loop():
             return
         random_thing()
 
-    if chance() <= 3:
+    if chance() <= 4:
         w.main_window.add_text(f"{s.p.name} is going to eat a random food without anyone's consent.")
         try:
             random_food = r.choice(list(s.p.inventory["edibles"].keys()))
         except IndexError:
             w.main_window.add_text("hm. there seems to be no food at all!")
+            w.main_window.after(50, random_event_loop)
             return
 
         w.main_window.add_text(f"and that food is {random_food}! say goodbye to it!")
         eat.eat(random_food)
+
+    if chance() <= 3 and s.p.inventory.get("dirt", 0) >= 60:
+        w.main_window.add_text("oops. the dirt made half of your cash dirty. can't be used now! 💸")
+        s.p.cash *= 0.5
+
+    if chance() < 6:
+        w.main_window.add_text(f"the {s.p.name} found a disturbing and ugly pothole that must be filled up immediately.")
+        pothole_size = r.randint(10, 20)
+        if pothole_size > s.p.inventory.get("dirt", 0):
+            w.main_window.add_text(f"the pothole size was {pothole_size} dirts but {s.p.name} only had {s.p.inventory.get("dirt", 0)} dirts...")
+            w.main_window.add_text(f"{s.p.name} was forced to walk away and leave it behind, knowing the sins they did.")
+            w.main_window.after(50, random_event_loop)
+            return
+
+        s.p.inventory["dirt"] -= pothole_size
+        w.main_window.add_text(f"the pothole was only {pothole_size} dirts big, so {s.p.name} filled it up, and now have {s.p.inventory["dirt"]} dirts!")
 
 
 

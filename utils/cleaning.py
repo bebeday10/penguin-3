@@ -10,7 +10,7 @@ def cleaning():
         w.main_window.add_text(f"after hard work, {s.p.name} finished cleaning!")
         dirt_earned = r.randint(3, 6)
         s.p.inventory["dirt"] = s.p.inventory.get("dirt", 0) + dirt_earned
-        w.main_window.add_text(f"{s.p.name} earned {dirt_earned} dirts! 🎉🎉🎉🎉")
+        w.main_window.add_text(f"{s.p.name} earned {dirt_earned} dirts and now has {s.p.inventory["dirt"]} dirts! 🎉🎉🎉🎉")
         
 
     w.main_window.add_text(f"the {s.p.name} goes cleaning! 🧹🧹")
