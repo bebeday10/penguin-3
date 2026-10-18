@@ -85,7 +85,7 @@ def random_event_loop():
         w.main_window.add_text(f"{s.p.name} is going to ask itself what to do. don't blame it.")
         wtd.what_do()
 
-    if chance() <= 3:
+    if chance() <= 4.5:
         w.main_window.add_text(f"{s.p.name} is going to do a random thing. beware.")
         random_thing = r.choice(list(w.main_window.keywords.values()))
         w.main_window.add_text(f"it is going to do {random_thing.__name__}.")
@@ -95,7 +95,7 @@ def random_event_loop():
             return
         random_thing()
 
-    if chance() <= 4:
+    if chance() <= 5.5:
         w.main_window.add_text(f"{s.p.name} is going to eat a random food without anyone's consent.")
         try:
             random_food = r.choice(list(s.p.inventory["edibles"].keys()))
