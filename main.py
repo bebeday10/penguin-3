@@ -21,6 +21,7 @@ import utils.processing_plant
 import utils.random_event_loop as rel
 import utils.countrywants
 import utils.fishing
+import utils.cleaning
 
 rel.random_event_loop()
 w.manager.run()

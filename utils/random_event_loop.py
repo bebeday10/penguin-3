@@ -9,10 +9,11 @@ from . import fish_market as fm
 from . import fishing
 from . import what_to_do as wtd
 from . import eat
+from . import cleaning as c
 
 def random_event_loop():
 
-    chance = lambda: r.uniform(0, 150000)
+    chance = lambda: r.uniform(0, 140000)
 
     if chance() <= 10:
         w.main_window.add_text(f"lucky {s.p.name}! they found 10 cents!")
@@ -52,6 +53,10 @@ def random_event_loop():
         w.main_window.add_text("the penguin is going to collect garbage without anyone's consent.")
         g.collect_garbage()
 
+    if chance() <= 7:
+        w.main_window.add_text(f"{s.p.name} is going to go cleaning without anyone's consent. it looked pretty dirty.")
+        c.cleaning()
+
     if chance() <= 5:
         w.main_window.add_text("the penguin slipped off the ice rink. they want food now.")
 
@@ -80,20 +85,20 @@ def random_event_loop():
         w.main_window.add_text(f"{s.p.name} is going to ask itself what to do. don't blame it.")
         wtd.what_do()
 
-    if chance() <= 0.6:
+    if chance() <= 2:
         w.main_window.add_text(f"{s.p.name} is going to do a random thing. beware.")
-        random_thing = r.choice(w.main_window.keywords.values())
+        random_thing = r.choice(list(w.main_window.keywords.values()))
         w.main_window.add_text(f"it is going to do {random_thing.__name__}.")
-        if random_thing.__name__ == "exit":
+        if random_thing.__name__ == "exit_command":
             w.main_window.add_text("... but it couldn't because it was too dangerous. aww well.")
             w.main_window.after(50, random_event_loop)
             return
         random_thing()
 
-    if chance() <= 1.5:
+    if chance() <= 3:
         w.main_window.add_text(f"{s.p.name} is going to eat a random food without anyone's consent.")
         try:
-            random_food = r.choice(s.p.inventory["edibles"].keys())
+            random_food = r.choice(list(s.p.inventory["edibles"].keys()))
         except IndexError:
             w.main_window.add_text("hm. there seems to be no food at all!")
             return
