@@ -23,6 +23,8 @@ import utils.countrywants
 import utils.fishing
 import utils.cleaning
 import utils.dirty_a_thing
+import utils.why_fish_expense
+import utils.swim
 
 rel.random_event_loop()
 w.manager.run()

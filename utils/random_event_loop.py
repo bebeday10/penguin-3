@@ -10,6 +10,7 @@ from . import fishing
 from . import what_to_do as wtd
 from . import eat
 from . import cleaning as c
+from . import swim
 
 def random_event_loop():
 
@@ -122,6 +123,10 @@ def random_event_loop():
 
         s.p.inventory["dirt"] -= pothole_size
         w.main_window.add_text(f"the pothole was only {pothole_size} dirts big, so {s.p.name} filled it up, and now have {s.p.inventory["dirt"]} dirts!")
+
+    if chance() < 7.25:
+        w.main_window.add_text(f"{s.p.name} couldn't resist going swimming, therefore they are going to do the aforementioned without consent.")
+        swim.swim()
 
 
 

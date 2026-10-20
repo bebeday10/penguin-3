@@ -15,7 +15,8 @@ class Penguin:
         "cash": 0.0,
         "name": "penguin",
         "inventory": {
-            "edibles": {}
+            "edibles": {},
+            "drinkables": {}
         }
     }
     """
@@ -23,8 +24,10 @@ class Penguin:
     """
     def __post_init__(self):
         self.inventory = self.inventory or {
-        "edibles": {}
+        "edibles": {},
+        "drinkables": {}
     }
+        self.inventory.setdefault("drinkables", {})
     def save_data(self):
         data = {
             "garbage": self.garbage,
