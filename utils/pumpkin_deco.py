@@ -20,7 +20,10 @@ w.main_window.keywords[
     "decorate-pumpkins",
     "pumpkin-decorate",
     "deco-pumpkins",
-    "pumpkin-deco"
+    "pumpkin-deco",
+    "decorate-pumpkin",
+    "pumpkins-decorate",
+    "pumpkins-deco"
 ] = decorate_pumpkins
 
     
