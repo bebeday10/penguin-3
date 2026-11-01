@@ -43,7 +43,7 @@ class Penguin:
             data,
             "save.json"
         )
-        self.inventory.setdefault("drinkables", {})
+        
     def load_data(self):
         data = d.load_data(
             p.BASE_DIR.parent / "penguin-3-data" / "save.json",
@@ -51,4 +51,5 @@ class Penguin:
         )
         for key, value in data.items():
             setattr(self, key, value)
+        self.inventory.setdefault("drinkables", {})
         
