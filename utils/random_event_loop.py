@@ -128,6 +128,10 @@ def random_event_loop():
         w.main_window.add_text(f"{s.p.name} couldn't resist going swimming, therefore they are going to do the aforementioned without consent.")
         swim.swim()
 
+    if chance() < 4.75:
+        w.main_window.add_text(f"a pumpkin was found on the tree!!! the penguin picked it up!! 🎃")
+        s.p.inventory["edibles"]["pumpkin"] = s.p.inventory["edibles"].get("pumpkin") + 1
+
 
 
     w.main_window.after(50, random_event_loop)

@@ -3,20 +3,20 @@ from . import state as s
 
 def stats():
     """show the stats of your penguin!!! useful to check if you have stuff."""
-    def auto_format(k, v):
+    def auto_format(k, v, indent=0):
         if isinstance(v, dict):
-            w.main_window.add_text(f"{k}:")
-            w.main_window.add_text("------")
+            w.main_window.add_text(f"{"        "*indent}{k}:")
+            w.main_window.add_text(f"{"        "*indent}------")
             for sub_k, sub_v in v.items():
-                auto_format(sub_k, sub_v)
-            w.main_window.add_text("------")
+                auto_format(sub_k, sub_v, indent+1)
+            w.main_window.add_text(f"{"        "*indent}------")
         elif isinstance(v, (list, tuple, set)):
-            w.main_window.add_text(f"{k}:")
-            w.main_window.add_text("------")
+            w.main_window.add_text(f"{"        "*indent}{k}:")
+            w.main_window.add_text(f"{"        "*indent}------")
             for i, sub_item in enumerate(v):
-                auto_format(i ,sub_item)
+                auto_format(i ,sub_item, indent+1)
         else:
-            w.main_window.add_text(f"{k}: {v}")
+            w.main_window.add_text(f"{"        "*indent}{k}: {v}")
 
     w.main_window.add_text(f"--- {s.p.name}'s stats ---")
     for k, v in s.p.__dict__.items():

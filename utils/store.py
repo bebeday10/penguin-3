@@ -33,7 +33,8 @@ def grocery():
         "bread": 4.25,
         "potato": 3.49,
         "mushroom": 1.2,
-        "watermelon": 23.65
+        "watermelon": 23.65,
+        "pumpkin": 21.45,
     }
     grocery_window.add_widget(ctk.CTkScrollableFrame, "Grocery Frame", 25, 25, side="left")
     grocery_window.add_widget(ctk.CTkLabel, "desc", 25, 25, "top", grocery_window.widgets["Grocery Frame"], text="click something to buy it", height=50)
@@ -45,7 +46,8 @@ def grocery():
 w.main_window.keywords[
     "grocery",
     "go-to-grocery",
-    "groceries"
+    "groceries",
+    "store"
 ] = grocery
 
 

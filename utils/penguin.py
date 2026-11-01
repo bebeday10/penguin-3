@@ -10,6 +10,7 @@ class Penguin:
     cash: float = 0.0
     name: str = "penguin"
     inventory: dict[str, dict] | None = None
+    places: dict[str, dict] | None = None
     DEFAULT_DATA = {
         "garbage": 0,
         "cash": 0.0,
@@ -17,7 +18,8 @@ class Penguin:
         "inventory": {
             "edibles": {},
             "drinkables": {}
-        }
+        },
+        "places": {}
     }
     """
     the default data for the penguin
@@ -27,19 +29,21 @@ class Penguin:
         "edibles": {},
         "drinkables": {}
     }
-        self.inventory.setdefault("drinkables", {})
+        self.places = self.places or {}
+        
     def save_data(self):
         data = {
             "garbage": self.garbage,
             "cash": self.cash,
             "name": self.name,
-            "inventory": self.inventory
+            "inventory": self.inventory,
+            "places": self.places
         }
         d.save_data(
             data,
             "save.json"
         )
-
+        self.inventory.setdefault("drinkables", {})
     def load_data(self):
         data = d.load_data(
             p.BASE_DIR.parent / "penguin-3-data" / "save.json",
