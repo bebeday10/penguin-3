@@ -20,7 +20,7 @@
 - [x] SOMETHING ABOUT THE OTHER 2 GAMES
 
 ## REALISTIC PENGUIN STUFF
-- [ ] swim
+- [x] swim
 - [ ] dive
 - [x] food hunting
 - [ ] porpoising (leap water)
