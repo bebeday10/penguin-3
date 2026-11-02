@@ -130,7 +130,7 @@ def random_event_loop():
 
     if chance() < 4.75:
         w.main_window.add_text(f"a pumpkin was found on the tree!!! the penguin picked it up!! 🎃")
-        s.p.inventory["edibles"]["pumpkin"] = s.p.inventory["edibles"].get("pumpkin") + 1
+        s.p.inventory["edibles"]["pumpkin"] = s.p.inventory["edibles"].get("pumpkin", 0) + 1
 
 
 
