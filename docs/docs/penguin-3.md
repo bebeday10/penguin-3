@@ -141,3 +141,7 @@ There is a small chance that if the amount of dirt collected is at least 60, tha
 
 This is an important reason why holding dirt is a bad idea.
 
+## Mark
+
+Mark is an agent for Penguin 3 that tells knowledge from this page. It is trained using PenguinCustomerSupport, and it speaks confidently to help the penguin in how to play Penguin 3.  
+The player can ask Mark by using `ask-mark`, `mark-ask` or `why-mark` and telling the Mark Model, which is Mark's memory, and the amount of words he should speak. After that, the player can ask a question at Mark, and he will respond with knowledge from this factually correct article.
