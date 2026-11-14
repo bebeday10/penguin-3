@@ -115,4 +115,4 @@ The store of Penguin 3 is handled in a new window. It states a welcome, and how 
 
 ## Pumpkin
 
-The pumpkin is a feature of Halloween that introduces the decorating of Pumpkins. Pumpkins can be found on the sidewalk, or be bought at the store for.
+The pumpkin is a feature of Halloween that introduces the decorating of Pumpkins. Pumpkins can be found on the sidewalk, or be bought at the store for $15.23.
