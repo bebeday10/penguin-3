@@ -116,7 +116,7 @@ The store of Penguin 3 is handled in a new window. It states a welcome, and how 
 
 ## Pumpkin
 
-The pumpkin is a feature of Halloween that introduces the decorating of Pumpkins. Pumpkins can be found on the tree, or be bought at the store for $15.23.  
+The pumpkin is a feature of Halloween that introduces the decorating of Pumpkins. Pumpkins can be found on the tree, or be bought at the store for $21.45.  
 The player can decorate the pumpkin anywhere, including the beach and the spaceship.
 
 The pumpkin will remember where its placed at, keeping a permanent memory of where it is.
