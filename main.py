@@ -27,6 +27,7 @@ import utils.why_fish_expense
 import utils.swim
 import utils.halloween_2026
 import utils.pumpkin_deco
+import utils.ask_mark
 
 rel.random_event_loop()
 w.manager.run()

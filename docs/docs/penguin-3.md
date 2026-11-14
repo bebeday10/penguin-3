@@ -115,4 +115,29 @@ The store of Penguin 3 is handled in a new window. It states a welcome, and how 
 
 ## Pumpkin
 
-The pumpkin is a feature of Halloween that introduces the decorating of Pumpkins. Pumpkins can be found on the sidewalk, or be bought at the store for $15.23.
+The pumpkin is a feature of Halloween that introduces the decorating of Pumpkins. Pumpkins can be found on the tree, or be bought at the store for $15.23.  
+The player can decorate the pumpkin anywhere, including the beach and the spaceship.
+
+The pumpkin will remember where its placed at, keeping a permanent memory of where it is.
+
+## Sidewalk finds
+
+The penguin can find a banana on the sidewalk. This means other penguins commonly drop bananas every few hours, which means lucky finds are available.
+
+## Dirt
+
+Dirt can be acquired by cleaning the ice floor. Penguins can use them to fill up potholes, but it may lead to consequences.
+
+### Pothole
+
+Potholes in Penguin 3 can be filled up using dirt. The amount of dirt ranges from an integer around 10 to 20.  
+
+The penguin is forced to fill up the pothole immediately with no confirmation due to how ugly and disturbing it is, and if they don't have enough dirt, they will be forced to walk away and leave it behind, knowing the sins they did.
+
+This is an important reason why holding dirt is a good idea.
+
+### Dirty cash
+There is a small chance that if the amount of dirt collected is at least 60, that half of the penguin's cash gets dirty, and it cannot be used again.  
+
+This is an important reason why holding dirt is a bad idea.
+
