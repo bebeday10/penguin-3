@@ -28,6 +28,7 @@ def grocery():
     grocery_window.add_widget(ctk.CTkLabel, "store label", 25, 25, side="left", text=f"the grocery with food ({s.p.name} currently has ${s.p.cash:.2f})", font=("Roboto", 30, "bold"))
     grocery_items = {
         "banana": 2.5,
+        "orange": 5,
         "fish": 10,
         "peanuts": 0.5,
         "bread": 4.25,
