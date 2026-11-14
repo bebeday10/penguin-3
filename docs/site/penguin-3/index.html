@@ -1,0 +1,1410 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="That one penguin game that has had 2 sequels">
+      
+      
+        <meta name="author" content="bebeday10">
+      
+      
+        <link rel="canonical" href="https://bebeday10.github.io/penguin-3/penguin-3/">
+      
+      
+        <link rel="prev" href="../open_penguin_3/">
+      
+      
+        <link rel="next" href="../penguin/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="zensical-0.0.65">
+    
+    
+      
+        <title>Penguin 3 - Penguin 3</title>
+      
+    
+    
+      
+        
+      
+      <link rel="stylesheet" href="../assets/stylesheets/modern/main.40d3fdbb.min.css">
+      
+        
+          
+        
+        <link rel="stylesheet" href="../assets/stylesheets/modern/palette.812a03bb.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,500,500i,700,700i%7CJetbrains+Mono:400,400i,700,700i&amp;display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"Jetbrains Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_scope.pathname.endsWith("/")||(__md_scope=new URL(__md_scope.pathname+"/",location)),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,_=__md_scope)=>JSON.parse(t.getItem(_.pathname+"."+e)),__md_set=(e,t,_=localStorage,a=__md_scope)=>{try{_.setItem(a.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer" aria-label="Navigation"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#penguin-3" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="./.." title="Penguin 3" class="md-header__button md-logo" aria-label="Penguin 3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer" aria-label="Navigation">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-menu" viewBox="0 0 24 24"><path d="M4 5h16M4 12h16M4 19h16"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Penguin 3
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Penguin 3
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun-moon" viewBox="0 0 24 24"><path d="M12 2v2M14.837 16.385a6 6 0 1 1-7.223-7.222c.624-.147.97.66.715 1.248a4 4 0 0 0 5.26 5.259c.589-.255 1.396.09 1.248.715M16 12a4 4 0 0 0-4-4M19 5l-1.256 1.256M20 12h2"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-moon" viewBox="0 0 24 24"><path d="M20.985 12.486a9 9 0 1 1-9.473-9.472c.405-.022.617.46.402.803a6 6 0 0 0 8.268 8.268c.344-.215.825-.004.803.401"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search" aria-label="Search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-search" viewBox="0 0 24 24"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog" aria-label="Search">
+  <button type="button" class="md-search__button">
+    Search
+  </button>
+</div>
+      
+    
+    <div class="md-header__source">
+      
+        <a href="https://github.com/bebeday10/penguin-3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bebeday10/penguin-3
+  </div>
+</a>
+      
+    </div>
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="./.." class="md-tabs__link">
+        
+  
+  Penguin 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../closing_penguin_3/" class="md-tabs__link">
+        
+  
+  Closing Penguin 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../install_penguin_3/" class="md-tabs__link">
+        
+  
+  Install Penguin 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../open_penguin_3/" class="md-tabs__link">
+        
+  
+  Open Penguin 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="././" class="md-tabs__link">
+        
+  
+  Penguin 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../penguin/" class="md-tabs__link">
+        
+  
+  Penguin
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../sub-keywords/" class="md-tabs__link">
+        
+  
+  Sub-keywords
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../typing_in_penguin_3/" class="md-tabs__link">
+        
+  
+  Typing in Penguin 3
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../using_help/" class="md-tabs__link">
+        
+  
+  Using help
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="./.." title="Penguin 3" class="md-nav__button md-logo" aria-label="Penguin 3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-book-open" viewBox="0 0 24 24"><path d="M12 5v16M20.001 19A2 2 0 0 0 22 17V5a2 2 0 0 0-1.999-2L16 3.002A5 5 0 0 0 12 5a5 5 0 0 0-4-2H4a2 2 0 0 0-2 2v12a2 2 0 0 0 1.999 2H8a5 5 0 0 1 4 2 5 5 0 0 1 4-2z"/></svg>
+
+    </a>
+    Penguin 3
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/bebeday10/penguin-3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    bebeday10/penguin-3
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="./.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Penguin 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../closing_penguin_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Closing Penguin 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../install_penguin_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Install Penguin 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../open_penguin_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Open Penguin 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Penguin 3
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="././" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Penguin 3
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#garbage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Garbage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collecting-garbage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Collecting garbage
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Collecting garbage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#waiting-time-of-collecting-garbage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Waiting time of collecting garbage
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#garbage-collection-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage collection amount
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selling-garbage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Selling garbage
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selling garbage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#garbage-selling-waiting-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage selling waiting time
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#garbage-selling-earnings-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage selling earnings amount
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#garbage-selling-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage selling image
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Main window
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-logo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Game logo
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#government-treasury" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Government treasury
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keybinds" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Keybinds
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-of-penguin-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Documentation of Penguin 3
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#penglang" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PengLang
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PengLang">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#window-workings" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Window workings
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jimmy-jenguin" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Jimmy Jenguin
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sweesh-swash" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sweesh swash
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#store" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Store
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pumpkin" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pumpkin
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../penguin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Penguin
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sub-keywords/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Sub-keywords
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../typing_in_penguin_3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Typing in Penguin 3
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using_help/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+  Using help
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  
+                    
+                    
+                    
+                      
+                    
+                    
+                      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+                      <div class="md-sidebar-button__wrapper">
+                        <label class="md-sidebar-button" for="__toc"></label>
+                      </div>
+                    
+                  
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#garbage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Garbage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#collecting-garbage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Collecting garbage
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Collecting garbage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#waiting-time-of-collecting-garbage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Waiting time of collecting garbage
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#garbage-collection-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage collection amount
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#selling-garbage" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Selling garbage
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Selling garbage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#garbage-selling-waiting-time" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage selling waiting time
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#garbage-selling-earnings-amount" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage selling earnings amount
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#garbage-selling-image" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Garbage selling image
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#main-window" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Main window
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#game-logo" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Game logo
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#government-treasury" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Government treasury
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#keybinds" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Keybinds
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#documentation-of-penguin-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Documentation of Penguin 3
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#penglang" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        PengLang
+      </span>
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="PengLang">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#window-workings" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Window workings
+      </span>
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jimmy-jenguin" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Jimmy Jenguin
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sweesh-swash" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Sweesh swash
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#store" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Store
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pumpkin" class="md-nav__link">
+    <span class="md-ellipsis">
+      <span class="md-typeset">
+        Pumpkin
+      </span>
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+  
+
+
+<h1 id="penguin-3">Penguin 3<a class="headerlink" href="#penguin-3" title="Permanent link">&para;</a></h1>
+<p>Penguin 3 is a game coming after Penguin 2 and 1, where a penguin collects garbage and does their daily life.<br />
+The game uses the infrastructure of PengLang for the windows.</p>
+<h2 id="garbage">Garbage<a class="headerlink" href="#garbage" title="Permanent link">&para;</a></h2>
+<p>Garbage is an important part of Penguin 3. Penguins can use it to sell for money.  </p>
+<h3 id="collecting-garbage">Collecting garbage<a class="headerlink" href="#collecting-garbage" title="Permanent link">&para;</a></h3>
+<p>The penguin can collect garbage in Penguin 3 using commands like <code>collect-garbage</code>.<br />
+It is ran in the main window, and does not open any other windows.</p>
+<h4 id="waiting-time-of-collecting-garbage">Waiting time of collecting garbage<a class="headerlink" href="#waiting-time-of-collecting-garbage" title="Permanent link">&para;</a></h4>
+<p>Collecting garbage takes around 2 to 5 seconds. The waiting time of collecting garbage is not weighted.</p>
+<h4 id="garbage-collection-amount">Garbage collection amount<a class="headerlink" href="#garbage-collection-amount" title="Permanent link">&para;</a></h4>
+<p>The amount of garbage collected every collection is 3 to 6 kilograms. The chances are not weighted.</p>
+<h3 id="selling-garbage">Selling garbage<a class="headerlink" href="#selling-garbage" title="Permanent link">&para;</a></h3>
+<p>Selling garbage will open a window titled "sell garbage", where the player is presented with a label saying "sell your garbage" and how much garbage the player's penguin has in kilograms.</p>
+<p>The player can sell garbage using the entry box at the bottom of said window where it says "Type a number, like 3 or type exit to go back..." as placeholder text. The player can follow the aforementioned text and press enter and sell garbage.</p>
+<h4 id="garbage-selling-waiting-time">Garbage selling waiting time<a class="headerlink" href="#garbage-selling-waiting-time" title="Permanent link">&para;</a></h4>
+<p>There is no waiting time to sell garbage. It happens immediately.</p>
+<h4 id="garbage-selling-earnings-amount">Garbage selling earnings amount<a class="headerlink" href="#garbage-selling-earnings-amount" title="Permanent link">&para;</a></h4>
+<p>The amount of money the player earns depends on randomness and the amount of garbage the player sells.  </p>
+<p>The earnings is the amount of garbage sold multiplied by a number between 0.5 and 2.</p>
+<p>People call the numbers below 1 a bad market and above 1 a good market.</p>
+<h4 id="garbage-selling-image">Garbage selling image<a class="headerlink" href="#garbage-selling-image" title="Permanent link">&para;</a></h4>
+<p>There is an image beside the entry box showcasing a humorous image of a penguin selling garbage at a stand saying "buy my garbage" at the top and then "please" at the bottom of the stand. Garbage are surrounded around it.</p>
+<h2 id="main-window">Main window<a class="headerlink" href="#main-window" title="Permanent link">&para;</a></h2>
+<p>The main window of Penguin 3, titled after the game's name, Penguin 3, is a terminal-like window that is in a frame.<br />
+Here is a bullet-point-rendition of it:</p>
+<ul>
+<li>Window</li>
+<li>Frame<ul>
+<li>Textbox</li>
+<li>Entry with the placeholder text: "Type here..."</li>
+<li>Exit button</li>
+<li>An image of the game's logo</li>
+</ul>
+</li>
+</ul>
+<h2 id="game-logo">Game logo<a class="headerlink" href="#game-logo" title="Permanent link">&para;</a></h2>
+<p>The logo of the game is an icon for Penguin 3. It appears everywhere in the game, and there are a few commands to trigger it opening it in a window, letting users see the logo in native resolution.</p>
+<p>The logo starts off at the top, where a green penguin with a yellow beak is faced at the screen.<br />
+After that, a 3D number 3, the 3<sup>rd</sup> number of the positive integer set that is green, with a shade of dark green, around the corners of it. The logo also has a transparent background.  </p>
+<p>The logo was made in Microsoft Paint, a product made by Microsoft.  </p>
+<h2 id="government-treasury">Government treasury<a class="headerlink" href="#government-treasury" title="Permanent link">&para;</a></h2>
+<p>The government treasury in Penguin 3 is a file that has 2 comments, they say "Here lies government treasury. where is it"  </p>
+<p>This tells source code readers to stop reading the source code and think about their vibrant life for a second.  </p>
+<p>It also means there's no government treasury in the game.</p>
+<h2 id="keybinds">Keybinds<a class="headerlink" href="#keybinds" title="Permanent link">&para;</a></h2>
+<p>There are no keybinds in Penguin 3, as it is meant to be typed, not memorized.</p>
+<h2 id="documentation-of-penguin-3">Documentation of Penguin 3<a class="headerlink" href="#documentation-of-penguin-3" title="Permanent link">&para;</a></h2>
+<p>The documentation of Penguin 3 is handled by Zensical, a modern static site generator designed to simplify building and maintaining project documentation. The pages included is the main page, closing the game, installing the game, opening the game, penguin info, sub-keywords, typing in Penguin 3, and using help.</p>
+<p>The page "Penguin 3" is a large page built for customer support, and it includes many detailed sections, including garbage, collecting garbage, selling garbage, main window, game logo, government treasury, keybinds and Documentation of Penguin 3.</p>
+<p>The section "Documentation of Penguin 3" documents how Penguin 3 is handled by Zensical, a modern static site generator designed to simplify building and maintaining project documentation. It then documents how it is a large page built for customer support, and includes many sections. It then focuses on the section "Documentation of Penguin 3", where it repeats the same thing over again, then documents how it repeats the same thing and then documents that.</p>
+<h2 id="penglang">PengLang<a class="headerlink" href="#penglang" title="Permanent link">&para;</a></h2>
+<p>PengLang is a Python module that makes Python for penguins. Penguin 3 uses PengLang for their simple windows, built off CustomTkinter.  </p>
+<h3 id="window-workings">Window workings<a class="headerlink" href="#window-workings" title="Permanent link">&para;</a></h3>
+<p>Using PenguinIceWindow, the main window can be made in a few lines.</p>
+<p>Functions can be added to the keywords list as a tuple or a string, and they can be run in-game.</p>
+<p>The arguments of a function get passed onto PengLang, and PengLang can make them become sub-keywords to pass to the function.</p>
+<p>Sub-keywords can be made using the argument split, which is most commonly " " (a space).</p>
+<h2 id="jimmy-jenguin">Jimmy Jenguin<a class="headerlink" href="#jimmy-jenguin" title="Permanent link">&para;</a></h2>
+<p>Jimmy Jenguin is not stated in Penguin 3, because it is part of an event that happened in PengLang's docs' Features section's Random Ice page. However, Jimmy Jenguin was a leader of the jenguins who fought against the penguins "due to many things". Jimmy is known for wanting the penguin's valued secrets, and they were surprised when the Bajida Karut™ was hidden behind a safe only penguin's knew about. They then said that they did all the work for nothing. After the penguins developed many innovative things, the jenguins had surrendered.</p>
+<h2 id="sweesh-swash">Sweesh swash<a class="headerlink" href="#sweesh-swash" title="Permanent link">&para;</a></h2>
+<p>In Penguin 3, if the penguin turns right on a roundabout, they get sweesh swashed.</p>
+<h2 id="store">Store<a class="headerlink" href="#store" title="Permanent link">&para;</a></h2>
+<p>The store of Penguin 3 is handled in a new window. It states a welcome, and how much money the penguin has. The statement updates every time the penguin buys something. There are many things to buy, including the Penguin Fries, Watermelon and the Pumpkin.</p>
+<h2 id="pumpkin">Pumpkin<a class="headerlink" href="#pumpkin" title="Permanent link">&para;</a></h2>
+<p>The pumpkin is a feature of Halloween that introduces the decorating of Pumpkins. Pumpkins can be found on the sidewalk, or be bought at the store for.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-circle-arrow-up" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="m16 12-4-4-4 4M12 16V8"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../open_penguin_3/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Open Penguin 3">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Open Penguin 3
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../penguin/" class="md-footer__link md-footer__link--next" aria-label="Next: Penguin">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Penguin
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2026 bebeday10
+    </div>
+  
+  
+    Made with
+    <a href="https://zensical.org/" target="_blank" rel="noopener">
+      Zensical
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/bebeday10" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2026 Fonticons, Inc.--><path fill="currentColor" d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5v52c0 15 12.5 23.5 27.5 17.5C441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5v-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      
+      
+        
+        
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.path","navigation.sections","navigation.top","navigation.tracking","search.highlight","content.code.annotate","navigation.sections","navigation.tabs"],"redirect":null,"search":"../assets/javascripts/workers/search.7d14d953.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.c04ba553.min.js"></script>
+      
+    
+  </body>
+</html>
