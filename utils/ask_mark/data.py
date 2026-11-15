@@ -142,8 +142,74 @@ There is a small chance that if the amount of dirt collected is at least 60, tha
 
 This is an important reason why holding dirt is a bad idea.
 
+### Dirt throwing
+
+Players can throw dirt using the `dirt` command, followed by where they want to dirt. By default, dirt will be dirted into nothing, however it still depletes the dirt. Dirting something will deplete your dirt and dirt that thing.  
+
+Players can use this if their dirt is around 60, as the chances of dirting cash will appear, leading to consequences.
+
 ## Mark
 
 Mark is an agent for Penguin 3 that tells knowledge from this page. It is trained using PenguinCustomerSupport, and it speaks confidently to help the penguin in how to play Penguin 3.  
 The player can ask Mark by using `ask-mark`, `mark-ask` or `why-mark` and telling the Mark Model, which is Mark's memory, and the amount of words he should speak. After that, the player can ask a question at Mark, and he will respond with knowledge from this factually correct article.
+
+## Fishing
+Fishing in Penguin 3 lets penguins get free fish by playing a fishing minigame. This is the main reason why fish are expensive in Penguin 3, as they encourage you to learn fishing for free.
+
+### Interface
+It opens a new window titled "fishing platform", using the icon of the game logo. The fishing minigame has a label saying "go fishing with the penguin!", a description label saying "the fish will appear as soon as you click start! after that, this text will say where it is. you have 5 seconds to click the button corresponding to it!" which describes the fishing minigame, a button frame with the following buttons:
+
+- Start
+- Right
+- Left
+- Center
+- Exit
+- Image of a penguin fishing
+
+### Gameplay
+The gameplay of fishing is simple. After clicking the start button, the description label updates to say the fish at a random side, and the player is required to click the corresponding button in 5 seconds. If they successfully click the corresponding button within said time, they will gain 1, the first number in the positive integer set, of fish.
+
+### Homage to Penguin 1
+The fishing minigame was also in Penguin 1, with the same gameplay. However, Penguin 1 uses a terminal-like for the fishing window just like the main window, and you need to type the words instead of clicking the buttons.  
+Penguin 1 was planned to have buttons for the fishing minigame, but it was cancelled due to issues.
+
+### Fishing image
+The fishing image of Penguin 3 comprises of an image of a wooden bridge heading forward from the image and a sign saying "fishing platform" and a hanging fish from a wooden lamppost-like object.
+
+## Weather
+Penguin 3 has multiple instances of weather happening, although it doesn't change anything.  
+
+Possible happenings:
+
+- Rain starts.
+- Seems to be cooling, and recommends going to the grocery.
+- Sun appears.
+- Getting cloudy.
+- Clouds are deforming, expect the sun to appear.
+
+These happen randomly at any time.
+
+## Ice fall
+Sometimes, the penguin will fall down on the ice rink and want food. This could be because food is a healthy substance.
+
+## First open of Penguin 3
+When the player first opens Penguin 3, the game opens and tries to find for save data. Because it won't, the player starts with the defaults.
+
+## Data deletion
+The player can delete their data by going outside the Penguin 3 folder and locating the "penguin-3-data" folder and deleting "save.json".  
+
+## Random command running
+There is a slim chance randomly that the penguin decides to do something without the player's consent, ranging from any command. However, if the command is the exit command, `exit_command`, the penguin wil refrain because it's "too dangerous".
+
+## Food-help buying
+Sometimes, the penguin will open the grocery/fish market window to buy food. However, the penguin doesn't know how to use a GUI, and requires the player for help.  
+
+The penguin will ask for sashimi if the place chosen is the fish market.
+
+## Fish market scandal
+The fish market has extremely expensive prices, especially the sashimi at $150.78. This leads to penguins' bankruptcy. However, the fish market also offers choices like the economy fish at $5, so it is unknown whether there's a marketing tactic at the fish market.  
+Allegedly, the fish market is trying to raise prices to earn a profit. However, penguins don't know about this and would rather fund the market.  
+
+## Fish sales
+Regular fish sales will be lower due to the fact that fish can be fished at the fishing platform. If a penguin buys a regular fish from other markets, they have done a terrible financial choice.
 """

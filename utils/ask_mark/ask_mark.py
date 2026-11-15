@@ -2,7 +2,7 @@ import penglang.modules.pengcustomersupport as pcs
 from .. import window as w
 from . import data as d
 
-def ask_mark(model, word_amount, *question):
+def ask_mark(model="2", word_amount="50", *question):
     """
     Ask Mark a question.
 
