@@ -120,6 +120,8 @@ The player can decorate the pumpkin anywhere, including the beach and the spaces
 
 The pumpkin will remember where its placed at, keeping a permanent memory of where it is.
 
+Pumpkins can also be eaten, as it is part of the 'edibles' group.
+
 ## Sidewalk finds
 
 The penguin can find a banana on the sidewalk. This means other penguins commonly drop bananas every few hours, which means lucky finds are available.
@@ -211,3 +213,16 @@ Allegedly, the fish market is trying to raise prices to earn a profit. However, 
 
 ## Fish sales
 Regular fish sales will be lower due to the fact that fish can be fished at the fishing platform. If a penguin buys a regular fish from other markets, they have done a terrible financial choice.
+
+## Eating
+In Penguin 3, penguins can eat food they bought at either the grocery or the fish market, or earned by other areas, as long as they are in the "edibles" group. Food eating will find out whether the food exists and whether sufficient amount of said food is available.    
+Penguins can also devour foods.
+
+### Eating aftermath
+After eating, the penguin will say it is "refreshing", no matter what the chosen food to eat was.
+
+## Drinking
+In Penguin 3, penguins can drink drinks such as salt water, as long as they are in the "drinkables" group. Drinking drinks functions exactly the same as eating, but renamed to drink drinks. Drinks too are refreshing.
+
+## Swimming
+Swimming takes around 4 to 6 seconds to complete, and awards 3 to 6 liters of salt water that can be drank.
