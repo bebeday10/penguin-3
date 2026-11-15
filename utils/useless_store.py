@@ -32,7 +32,8 @@ def jimmy_jenguin_store():
         "Umbrella Gold": 10_000,
         "Ice flake personally handled by Jimmy Jenguin": 1_000_000,
         "Crystal": 75_000,
-        "Jimmy Jenguin 1:1 replica": 10_000_000 
+        "Jimmy Jenguin 1:1 replica": 10_000_000,
+        "Jimmy Moonrocks from Titan": 1e+100
     }
     market_window.add_widget(ctk.CTkScrollableFrame, "Grocery Frame", 25, 25, side="left")
     market_window.add_widget(ctk.CTkLabel, "desc", 25, 25, "top", market_window.widgets["Grocery Frame"], text="click something to buy it", height=50)
