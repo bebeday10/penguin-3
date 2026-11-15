@@ -32,6 +32,7 @@ import utils.drink
 import utils.bulk_garbage
 import utils.money_donation
 import utils.useless_store
+import utils.instant_bulk_garbage
 
 rel.random_event_loop()
 w.manager.run()
