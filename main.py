@@ -28,6 +28,7 @@ import utils.swim
 import utils.halloween_2026
 import utils.pumpkin_deco
 import utils.ask_mark
+import utils.drink
 
 rel.random_event_loop()
 w.manager.run()
