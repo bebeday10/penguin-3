@@ -29,6 +29,7 @@ import utils.halloween_2026
 import utils.pumpkin_deco
 import utils.ask_mark
 import utils.drink
+import utils.bulk_garbage
 
 rel.random_event_loop()
 w.manager.run()
