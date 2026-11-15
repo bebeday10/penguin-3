@@ -11,6 +11,8 @@ from . import what_to_do as wtd
 from . import eat
 from . import cleaning as c
 from . import swim
+from . import useless_store as us
+from . import money_donation as md
 
 def random_event_loop():
 
@@ -132,6 +134,12 @@ def random_event_loop():
         w.main_window.add_text(f"a pumpkin was found on the tree!!! the penguin picked it up!! 🎃")
         s.p.inventory["edibles"]["pumpkin"] = s.p.inventory["edibles"].get("pumpkin", 0) + 1
 
+    if chance() < 2.75:
+        w.main_window.add_text("the penguin is going to the jimmy jenguin luxury store without your consent. but they need your help to buy something. please?")
+        us.jimmy_jenguin_store()
 
+    if chance() < 1.9:
+        w.main_window.add_text("the penguin is going to donate charity a random amount from $0 to $100.")
+        md.money_donation(r.uniform(0, 100))
 
     w.main_window.after(50, random_event_loop)

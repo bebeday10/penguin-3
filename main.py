@@ -30,6 +30,8 @@ import utils.pumpkin_deco
 import utils.ask_mark
 import utils.drink
 import utils.bulk_garbage
+import utils.money_donation
+import utils.useless_store
 
 rel.random_event_loop()
 w.manager.run()

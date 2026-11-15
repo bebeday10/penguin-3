@@ -8,12 +8,14 @@ from . import data as d
 class Penguin:
     garbage: int = 0
     cash: float = 0.0
+    charity_cash: float = 0.0
     name: str = "penguin"
     inventory: dict[str, dict] | None = None
     places: dict[str, dict] | None = None
     DEFAULT_DATA = {
         "garbage": 0,
         "cash": 0.0,
+        "charity_cash": 0.0,
         "name": "penguin",
         "inventory": {
             "edibles": {},
@@ -35,6 +37,7 @@ class Penguin:
         data = {
             "garbage": self.garbage,
             "cash": self.cash,
+            "charity_cash": self.charity_cash,
             "name": self.name,
             "inventory": self.inventory,
             "places": self.places

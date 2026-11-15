@@ -104,7 +104,12 @@ Sub-keywords can be made using the argument split, which is most commonly " " (a
 
 ## Jimmy Jenguin
 
-Jimmy Jenguin is not stated in Penguin 3, because it is part of an event that happened in PengLang's docs' Features section's Random Ice page. However, Jimmy Jenguin was a leader of the jenguins who fought against the penguins "due to many things". Jimmy is known for wanting the penguin's valued secrets, and they were surprised when the Bajida Karut™ was hidden behind a safe only penguin's knew about. They then said that they did all the work for nothing. After the penguins developed many innovative things, the jenguins had surrendered.
+Jimmy Jenguin is stated in Penguin 3, and it is part of an event that happened in PengLang's docs' Features section's Random Ice page. However, Jimmy Jenguin was a leader of the jenguins who fought against the penguins "due to many things". Jimmy is known for wanting the penguin's valued secrets, and they were surprised when the Bajida Karut™ was hidden behind a safe only penguin's knew about. They then said that they did all the work for nothing. After the penguins developed many innovative things, the jenguins had surrendered.
+
+Jimmy Jenguin also owns a store named "The Jimmy Jenguin Luxury Store", where they sell overpriced umbrellas and ice flakes, and a 1:1 replica of them is $10,000,000 (10 million) in cash.
+
+### The Jimmy Jenguin Luxury Store scandal
+Like the fish market scandal, Jimmy Jenguin has been allegedly pricing their stuff at an amount where penguins can buy houses and companies. This leads to penguin bankruptcy, which is not good for the penguins. It is unknown whether Jimmy Jenguin themselves is a marketing tactic, and if they even own the company.
 
 ## Sweesh swash
 
