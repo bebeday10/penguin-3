@@ -33,6 +33,7 @@ import utils.bulk_garbage
 import utils.money_donation
 import utils.useless_store
 import utils.instant_bulk_garbage
+import utils.do_random
 
 rel.random_event_loop()
 w.manager.run()
